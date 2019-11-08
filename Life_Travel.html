@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet"> 
+    <title>Trello - Life Travel</title>
+    <style>
+    body {
+        background-color:rgb(12, 112, 12)
+    }
+
+            .buttons { 
+                    width: 45px;
+                    height: 45px;
+                    font-size: .7vw;
+                    background-color: rgb(92, 228, 144);
+                    margin: 2em;
+                    border-radius: 25%;
+                    text-align: center;
+                    display:inline-block;
+                    color: rgb(217, 252, 62);
+
+            }
+            .postit:hover {
+                background-color: gray;
+                height: 200px;
+            }
+            .headerB { 
+                    height: 60px;
+                    color: rgb(247, 120, 88);
+                    display:block;
+            }
+
+            .tab { 
+                    width: 230px;
+                    height: 800px;
+                    background-color: rgb(227, 230, 229);
+                    border-radius: 10%;
+                    font-family: 'Bowlby One SC', cursive;
+                    text-align: center;
+                    display:inline-block
+                    
+            }
+            .postit { 
+                    width: 180px;
+                    height: 100px;
+                    margin: 1em;
+                    padding: 1em;
+                    font-size: 1vw;
+                    border-radius: 10%;
+                
+                    font-family: verdana;
+                    background-color: white;
+                    display:block ; 
+                    overflow-y:scroll;
+            }
+        
+    </style>
+</head>
+<body>
+                     
+        <div class="headerb"> 
+            <div class="buttons"><a href="https://trello.com/">HOME</a> </div> 
+            <div class="buttons"> BOARD </div> 
+            <div class="buttons"> SEARCH </div>  
+        </div>                         
+        <div class="tab"> LOCATION
+            <div class="postit"> <div>Paris  My daughter wants to goto Paris, today!</div></div> 
+            <div class="postit">Costa Rica </div> 
+            <div class="postit">Colorado </div> 
+            <div class="postit">add another item </div>
+        </div>
+        <div class="tab"> CULTURE 
+                <div class="postit"> French Speaking </div>
+                <div class="postit"> Spanish Speaking </div> 
+                <div class="postit"> Dude Speaking </div>
+                <div class="postit">add another item </div>
+        </div>
+        <div class="tab"> ADVENTURES
+                <div class="postit"> Eiffel Tower </div> 
+                <div class="postit"> Zip Lining </div> 
+                <div class="postit"> Snow Boarding, Dude </div> 
+                <div id= "newPostit" class="postit"> <input type="text" id="myinput"> </div>
+        </div>
+        <!-- 
+        
+</body>
+<script>
+        function add_sticky()
+        {
+            Postvar = document.getElementById("newPostit");
+            Postvar.innerHTML += "<div>" + document.getElementById("myinput").value + "</div>";
+        }
+
+        function onDeKeyClick(event)
+        {
+            if (event.keyCode == 13)
+            {
+                add_sticky();
+            }
+            console.log(event);
+        }
+    document.getElementById("myinput").addEventListener("keypress", onDeKeyClick); -->
+</script>
+</html>
